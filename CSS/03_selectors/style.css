@@ -1,0 +1,92 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Type Selector */
+p{
+    font-size: 20px;
+    margin: 10px 20px 15px 20px;
+    padding: 2px 2px;
+}
+
+/* Class Selector */
+.highlight{
+    background-color: #aef222;
+}
+
+/* ID Selector */
+#header{
+    font-style: italic;
+    font-size: larger;
+}
+
+/* Attribute Selector */
+input[type="text"]{
+    border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

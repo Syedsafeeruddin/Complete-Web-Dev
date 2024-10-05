@@ -28,9 +28,44 @@ input[type="text"]{
     border: 2px solid black;
 }
 
+/* Descendant  Selector */
+article p{
+    font-size: larger;
+    background-color: darkblue ;
+    color: aliceblue;
+}
 
+/* Child Selector */
+div > p{
+    background-color: tomato;
+    color: aliceblue;
+}
 
+/* Adjacent Sibling Selector */
+h2 + p{
+    color: cadetblue;
+}
 
+/* General Sibling Selector */
+h2 ~ p{
+    background-color: blanchedalmond;
+}
+
+/* Pseudo-class Selector */
+a:hover{
+    background-color: aqua;
+    margin: 2px;
+}
+
+/* Pseudo-element Selector */
+p::first-letter{
+    font-size: 30px;
+    font-weight: bold;
+}
+/* Grouping Selector */
+h1, h2, h3{
+    color: chocolate;
+}
 
 
 

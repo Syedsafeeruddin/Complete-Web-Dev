@@ -8,3 +8,5 @@ Book.prototype.favBook = function(){
 
 let bookOne = new Book("Deep Work")
 bookOne.favBook()
+
+

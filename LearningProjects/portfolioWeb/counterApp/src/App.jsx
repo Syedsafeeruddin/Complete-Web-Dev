@@ -18,13 +18,18 @@ function App() {
   const [count, setCount] = useState(0)
 
   const addCount = () => {
-    setCount(() => count + 1)
+    setCount((prev) => prev + 1)
   }
   const subtractCount = () => {
-    setCount(() => count - 1)
+    setCount((prev) => prev - 1)
     if(count == 0){
       setCount(() => count)
     }
+  }
+
+
+  const resetCount = () => {
+    setCount(() => 0)
   }
 
 const words = [
@@ -45,7 +50,7 @@ const words = [
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
       >
       <BackgroundGradient>
-      <Card className='w-sm bg-gray-700 border-black'>
+      <Card className='w-lg bg-gray-800 border-black'>
         <CardHeader>
           <CardTitle className='flex items-center justify-center text-5xl text-gray-300'>Counter App</CardTitle>
           <CardDescription className='flex items-center justify-center text-2xl text-gray-300'>
@@ -58,6 +63,7 @@ const words = [
         <CardFooter className='flex items-center justify-center gap-2'>
           <HoverBorderGradient>
           <button
+          aria-label="Increase count"
           onClick={addCount}
           borderRadius="1.75rem"
           > Count + 1
@@ -65,9 +71,18 @@ const words = [
           </HoverBorderGradient>
           <HoverBorderGradient>
           <button
+          aria-label="Decrease count"
           onClick={subtractCount}
           borderRadius="1.75rem"
           > Count - 1
+          </button>
+          </HoverBorderGradient>
+          <HoverBorderGradient>
+          <button
+          aria-label="Reset count"
+          onClick={resetCount}
+          borderRadius="1.75rem"
+          > Reset Button
           </button>
           </HoverBorderGradient>
         </CardFooter>

@@ -3,11 +3,16 @@ import axios from "axios";
 import MovieCard from "./components/MovieCard.jsx";
 import SearchBar from "./components/SearchBar.jsx";
 import Typewriter from "./components/TypeWriter.jsx";
+import { useMovieContext } from "./context/movieContext";
+
 
 const App = () => {
   const [movie, setMovie] = useState({});
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+
+  // for movie context
+  const { favorites, addToFavorites, removeFromFavorites } = useMovieContext();
 
   const API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -35,6 +40,7 @@ const App = () => {
       setLoading(false);
     }
   };
+
 
   return (
     <div
@@ -64,7 +70,15 @@ const App = () => {
           <p className="text-lg text-red-500 mt-6 font-semibold">{error}</p>
         )}
 
-        {!loading && movie && movie.Title && <MovieCard movie={movie} />}
+        {!loading && movie && movie.Title && (
+          <MovieCard
+            movie={movie}
+            addToFavorites={addToFavorites}
+            removeFromFavorites={removeFromFavorites}
+            favorites={favorites}
+          />
+        )}
+
       </div>
     </div>
   );

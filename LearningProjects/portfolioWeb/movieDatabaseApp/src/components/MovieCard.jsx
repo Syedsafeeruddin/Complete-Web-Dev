@@ -1,6 +1,16 @@
 import React from "react";
+import { useMovieContext } from "../context/movieContext";
+import Toaster from 'react-hot-toast'
 
-const MovieCard = ({ movie }) => {
+const MovieCard = ({ movie, isFavoritePage = false }) => {
+  const { favorites, addToFavorites, removeFromFavorites } = useMovieContext();
+
+  if (!movie) return null;
+
+  const isAlreadyFavorite = favorites?.some(
+    (fav) => fav.imdbID === movie.imdbID
+  );
+
   return (
     <div className="bg-gray-900/80 border border-gray-700 rounded-2xl shadow-2xl flex flex-col md:flex-row overflow-hidden backdrop-blur-lg text-left mt-8 w-full max-w-4xl mx-auto transition-all duration-300">
       {/* Poster Section */}
@@ -39,6 +49,30 @@ const MovieCard = ({ movie }) => {
           <p className="text-gray-300 leading-relaxed mt-4 text-justify">
             <strong className="text-cyan-400">Plot:</strong> {movie.Plot}
           </p>
+        </div>
+
+        {/* Favorite Button */}
+        <div className="mt-6 flex justify-end">
+          {isFavoritePage ? (
+            <button
+              onClick={() => removeFromFavorites(movie.imdbID)}
+              className="px-5 py-2 bg-red-500 hover:bg-red-600 rounded-lg text-white font-semibold transition-all"
+            >
+              ❌ Remove from Favorites
+            </button>
+          ) : (
+            <button
+              onClick={() => addToFavorites(movie)}
+              disabled={isAlreadyFavorite}
+              className={`px-5 py-2 rounded-lg text-white font-semibold transition-all ${
+                isAlreadyFavorite
+                  ? "bg-gray-500 cursor-not-allowed"
+                  : "bg-cyan-500 hover:bg-cyan-600"
+              }`}
+            >
+              {isAlreadyFavorite ? "✅ Added" : "💖 Add to Favorites"}
+            </button>
+          )}
         </div>
       </div>
     </div>

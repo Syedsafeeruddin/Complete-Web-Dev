@@ -35,7 +35,7 @@ Users can search for recipes by keyword, explore ingredients, and view full cook
 
 ## ⚙️ Installation
 ```bash
-git clone https://github.com/SafeerUddin/recipe-finder-app.git
+git clone https://github.com/Syedsafeeruddin/Complete-Web-Dev/tree/main/LearningProjects/portfolioWeb/recipeFinderApp
 cd recipe-finder-app
 npm install
 npm start

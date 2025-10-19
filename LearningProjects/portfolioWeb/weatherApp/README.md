@@ -9,7 +9,6 @@ This app allows users to search for weather conditions, view temperature, and se
 - 🔍 Search weather by city name  
 - 🌡️ Real-time temperature, humidity, and condition updates  
 - 🌈 Dynamic background and icons based on weather type  
-- 💾 Persistent last search using Local Storage  
 - 📱 Fully responsive design built with Tailwind CSS  
 
 ---

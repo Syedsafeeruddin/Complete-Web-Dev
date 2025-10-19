@@ -31,6 +31,6 @@ This app allows users to search for weather conditions, view temperature, and se
 ## ⚙️ Installation
 ```bash
 git clone https://github.com/Syedsafeeruddin/Complete-Web-Dev/tree/main/LearningProjects/portfolioWeb/weatherApp
-cd weather-app
+cd weatherApp
 npm install
 npm start

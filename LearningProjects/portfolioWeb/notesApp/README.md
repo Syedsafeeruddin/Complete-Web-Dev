@@ -1,16 +1,42 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 📝 **Notes App – `README.md`**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A simple and elegant **React.js Notes App** that lets users create, edit, and delete notes — all stored locally in the browser.  
+Designed for speed, simplicity, and productivity.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Features
+- ➕ Create new notes  
+- ❌ Delete notes instantly  
+- 💾 Persistent Local Storage (notes stay even after refresh)  
+- 🔍 Search notes by title or content  
+- 📱 Responsive design using Tailwind CSS  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- React.js  
+- JavaScript (ES6+)  
+- Tailwind CSS  
+- Local Storage  
+
+---
+
+## 📸 Screenshots
+<img width="1239" height="688" alt="image" src="https://github.com/user-attachments/assets/65f3dc55-ac7d-45c8-8093-2c82d11ad3e7" />
+<img width="1254" height="651" alt="image" src="https://github.com/user-attachments/assets/5cfb3681-5725-4c3e-a36b-dc31785deefc" />
+
+
+
+
+---
+
+## ⚙️ Installation
+```bash
+git clone https://github.com/Syedsafeeruddin/Complete-Web-Dev/edit/main/LearningProjects/portfolioWeb/notesApp
+cd notesApp
+npm install
+npm start

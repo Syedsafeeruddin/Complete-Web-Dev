@@ -39,4 +39,8 @@ Designed for speed, simplicity, and productivity.
 git clone https://github.com/Syedsafeeruddin/Complete-Web-Dev/edit/main/LearningProjects/portfolioWeb/notesApp
 cd notesApp
 npm install
+<<<<<<< HEAD
 npm start
+=======
+npm start
+>>>>>>> 4b2e96b480b5b43abb916bc221fdd57736bc9894

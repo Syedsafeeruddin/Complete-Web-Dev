@@ -1,16 +1,41 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🥗 **Recipe Finder App – `README.md`**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+A **React.js-based Recipe Finder Application** that helps users discover new recipes using a public API.  
+Users can search for recipes by keyword, explore ingredients, and view full cooking instructions.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
+- 🔍 Search recipes by name
+- 📋 View detailed recipe instructions   
+- ⚡ Smooth and responsive card layout using Tailwind CSS  
+- 🍳 Fetch data from external API with Axios  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+- React.js  
+- JavaScript (ES6+)  
+- Tailwind CSS  
+- Axios  
+- MealDB API  
+
+---
+
+## 📸 Screenshots
+<img width="876" height="708" alt="image" src="https://github.com/user-attachments/assets/67257b71-9d11-4684-b997-516efed3e24b" />
+<img width="1173" height="600" alt="image" src="https://github.com/user-attachments/assets/212296f1-f2f7-492f-9cfb-1d4c988f33bc" />
+
+
+---
+
+## ⚙️ Installation
+```bash
+git clone https://github.com/Syedsafeeruddin/Complete-Web-Dev/tree/main/LearningProjects/portfolioWeb/recipeFinderApp
+cd recipeFinderApp
+npm install
+npm start
